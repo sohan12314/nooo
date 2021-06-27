@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<style>
+     body {
+        background-image: url('fin.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+     
+      </style>
+
+    
+
+<body>
+
+    <center>
+        <h1> final</h1>
+    <form action="insert2.php" method="POST" id="for">
+        <label>Payer's name</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <br>
+        <br>
+        <label>phone number</label>
+        <input type="text" name="ph" id="ph">
+        <br>
+        <br>
+        <br>
+        
+        <label>Transaction Id</label>
+        <input type="text" name="tran" id="tran">
+        <br>
+        <br>
+        <br>
+        
+       
+    </form>
+    <script type="text/javascript" >
+        function greeting(){
+          
+          var input1 = document.getElementById("name").value;
+          var input2 = document.getElementById("ph").value;
+          var input3= (input2%10000)+18;
+          alert(" Mr/Mrs  "+ input1+"\n your ticket number is:\n 2021"+input3+"\n copy this number for reference");
+              
+            }
+            </script>
+            <br>
+          <button onclick="greeting()">Genrate</button>
+          <br>
+          <br>
+    <button form="for" type="submit">submit</button>
+    
+    </center>
+
+</body>
+</html>

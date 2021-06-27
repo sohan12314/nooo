@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Busbooking</title>
+        <link rel="stylesheet" href="style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+            crossorigin="anonymous">
+        
+
+    </head>
+    <style>
+     
+      
+      body {
+        background-image: url('back1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=date] {
+  width: 100%;
+  background-color: #ccc;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 3px;
+ 
+  padding: 30px;
+}
+</style>
+
+      
+      </style>
+      
+    <body>
+      
+        
+     
+      
+        <nav class="navbar navbar-light bg-dark">
+            <div class="container">
+              <a class="navbar-brand" href="#">
+               <h1 style="color:red;">BUS BOOKING</h1>
+              
+              </a>
+              <ul>
+                <li><a href="#homecontent">Home</a></li>
+                <li><a href="#management">Management</a></li>
+               
+              </ul>
+            </div>
+            
+          </nav>
+          <div>
+          <form action="insert.php" method="GET">
+            <label>Name</label>
+            <input type="text" placeholder="Enter ur name..." name="name">
+
+            <br>
+           
+            <label>bus type</label>
+            <select name="bustype" id="bustype">
+              <optgroup label="Ac slipper coach">
+                <option value="airavatha">Airavatha</option>
+                <option value="rajahamsa">Rajahamsa</option>
+                <option value="Red bus">Red Bus</option>
+              </optgroup>
+              <optgroup label="NON AC">
+                <option value="udayaranga">Udayaranga</option>
+                <option value="srs">SRS</option>
+              </optgroup>
+            </select>
+            <br><br>
+
+            <br>
+            <label>departure</label>
+            <select name="depart" id="depart">
+              <optgroup label="Outer state">
+                <option value="Karnataka">Karnataka (majestic)</option>
+                <option value="maharastra">Maharastra</option>
+                <option value="kerala">Kerala</option>
+                <option value="Tamil nadu">Tamil nadu</option>
+                <option value="Andrapradesh">Andra pradesh</option>
+                <option value="Delhi">Delhi</option>
+              </optgroup>
+              <optgroup label="Inter state">
+                <option value="banglore">Bangalore</option>
+                <option value="mandya">Mandya</option>
+                 <option value="tumkur">Tumkur</option>
+                <option value="mysore">Mysore</option>
+                 <option value="manglore">Manglore</option>
+                <option value="hubli">Hubli</option>
+              </optgroup>
+            </select>
+        
+             
+            <br>
+            <label>destination</label>
+            <select name="dest" id="dest">
+              <optgroup label="Outer state">
+                <option value="Karnataka">Karnataka (majestic)</option>
+                <option value="maharastra">Maharastra</option>
+                <option value="kerala">Kerala</option>
+                <option value="Tamil nadu">Tamil nadu</option>
+                <option value="Andrapradesh">Andra pradesh</option>
+                <option value="Delhi">Delhi</option>
+              </optgroup>
+              <optgroup label="Inter state">
+                <option value="banglore">Bangalore</option>
+                <option value="mandya">Mandya</option>
+                 <option value="tumkur">Tumkur</option>
+                <option value="mysore">Mysore</option>
+                 <option value="manglore">Manglore</option>
+                <option value="hubli">Hubli</option>
+              </optgroup>
+            </select>
+            <br>
+           
+           
+            <br>
+            <label>date</label>
+            <input type="date" name="date">
+            <br>
+            <label>time</label>
+            
+            <select name="time" id="time">
+              <option value="06.00 am">6 am</option>
+              <option value="10.00 am">10 am</option>
+              <option value="01.00 pm">1 pm</option>
+              <option value="05.00 pm">5 pm</option>
+              <option value="08.00 pm">8 pm</option>
+              <option value="09.00 pm">9 pm</option>
+            </select>
+             
+               
+            <br>
+            <br>
+            <br>
+            
+
+            
+            <center><button type="submit">submit</button></center>
+          </form>
+        </div>
+    </body>
+</html>
+
+
+          
+     
+    
+
+    
+        
+
+      
+
+  
+          
+          
+          
+           
+          
+
+
+          
+    
